@@ -47,6 +47,12 @@ body {
   background: linear-gradient(to right, #0062E6, #33AEFF);
 }
 
+
+/* Set the border color to the desired color */
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
 // .navbar-brand {  
 //   font-size: 3rem;
 // }
