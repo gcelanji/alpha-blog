@@ -11,8 +11,7 @@ class User < ApplicationRecord
                     length: { maximum: 105 },
                     format: { with: VALID_EMAIL_REGEX }
 
-
-
+  has_secure_password
 end
 
 # /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
