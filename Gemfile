@@ -78,3 +78,6 @@ end
 gem "jquery-rails"
 gem "bootstrap", "~> 5.2.0"
 #gem "sassc-rails" default is above
+
+#pagination
+gem 'will_paginate', '~> 3.3'
