@@ -19,6 +19,7 @@ before_action :require_same_user, only:[:edit, :update, :destroy]
   end
 
   def create
+    #debugger
     #render plain: params[:article]
     #render plain: @article.inspect
     @article = Article.new(article_params)
@@ -54,7 +55,7 @@ before_action :require_same_user, only:[:edit, :update, :destroy]
   end
 
   def article_params
-    params.require(:article).permit(:title, :description)
+    params.require(:article).permit(:title, :description, category_ids: [])
   end
 
   def require_same_user
